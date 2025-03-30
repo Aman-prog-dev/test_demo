@@ -1,0 +1,3 @@
+def func(a,b=2,c=8):
+    return a+b+c
+print(func(2,c=4))
