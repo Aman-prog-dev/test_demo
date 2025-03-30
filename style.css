@@ -1,0 +1,196 @@
+*{
+    margin:0%;
+    padding: 0%;
+    user-select: none;
+    
+}
+.samm{
+    background-image:url('New folder/images\ \(2\).jfif');
+    background-size:100% 100%;   
+    animation-name: samm;
+    animation-duration:10s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite; 
+}
+@keyframes samm{
+    0%{background-image:url('new folder/images\ \(1\).jfif');}
+    25%{background-image:url('new folder/images\ \(1\).jfif');}
+    50%{background-image:url('new folder/images\ \(3\).jfif');}
+    75%{background-image:url('new folder/images.jfif');}
+}
+header{
+    width:100%;
+    background-color: black;
+    height:050px; 
+    justify-content: space-between;   
+    word-spacing:20%;
+    position: fixed;
+}
+header img{
+    width:3%;
+    height:30px;
+    padding:.3%;
+    border-radius:10%;   
+}
+header .nav a{
+    font-size:83%;
+    justify-content: space-between;
+    word-spacing:20%;
+    padding-right:5%;
+    text-decoration: none;
+    color:white;
+    
+}
+header .nav{
+    margin-left:25%;
+    justify-content: space-between;
+    word-spacing:5%;
+    margin-top:-2.5%;
+    padding-top:1%;
+}
+header .nav input{
+    width:25%;
+    height:6%;
+    background-color:black;
+    outline:none;
+    outline-color:none;
+    border:black;
+    cursor:pointer;
+    color: white;
+}
+header .nav input::placeholder{
+    color: white;
+    font-size:115%;
+}
+.nav a:hover{
+    color:gray;
+}
+.video video{
+    border:20px solid white;
+    border-radius:10%;
+    margin-left:2%;
+}
+form{
+    width:30%;
+    margin-left:55%;
+    margin-top:-25%;
+    height:350px;
+    background-color: aliceblue;
+    border:20px solid white;
+    border-radius: 10%;
+    padding-left: 5%;
+    line-height:35px;
+    font-weight: bold;
+
+}
+form input{
+    width:80%;
+    height:13%;
+    padding-left:1%;
+    border-radius:05%;
+    font-weight: bold;
+    color: black;
+    border:3px solid black;
+
+}
+form .submit{
+background-color: rgb(130, 219, 255);
+border:3px solid black;
+}
+form .submit:hover{
+    background-color: rgb(107, 138, 107);
+    color:black;
+    cursor: pointer;
+}
+form label:hover{
+    cursor: pointer;
+
+}
+.photo{
+    height:550px;
+    background-color: black;
+    margin-top: 80px;
+    animation-name: samms;
+    animation-duration:10s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite; 
+    background-size:100% 100%;
+    border:20px solid white;
+    border-radius:10px;
+    width:50%;
+}
+@keyframes samms{
+    0%{background-image:url('new folder/img1.jpg');}
+    100%{background-image:url('new folder/images\ 9.jpeg');}
+}
+footer{
+    margin-top:10%;
+    width: 70%;
+    margin-left:15%;
+    background-color: rgb(184, 241, 241);
+    height:250px;
+    border-radius:2%;
+    border:10px solid white;
+    box-shadow:10px 8px 9px 8px gray;
+}
+footer h1{
+    padding-left:45%;
+    font-weight: bolder;
+}
+footer hr{
+    height:3px;
+    color:black;
+    background-color: black;
+}
+footer pre{
+    padding-left:20%;
+    padding-top:4%;
+    font-weight: bold;
+
+}
+.end{
+    background-color:black;
+    font-size:80%;
+    height:20px;
+    color:white;
+    font-weight:bold;
+}
+.username{
+    /*background-color:rgb(181, 211, 223);*/
+}
+.usform{
+    margin-left:25%;
+    margin-top:10%;
+    height:620px;
+    width:40%;
+}
+.usform input{
+    height:40px;
+    border-radius:5px;
+    text-transform: uppercase;
+
+}
+.usform input::placeholder{
+    color:gray;
+    font-weight:bold;
+    text-transform: capitalize;
+}
+.usform textarea{
+    height:40px;
+    border:3px solid black;
+    width:81%;
+    border-radius:5px;
+}
+.usform textarea::placeholder{
+    color:gray;
+    font-weight: bold;
+}
+.but input{
+    width:82%;
+    background-color: rgb(159, 222, 201);
+    text-transform:capitalize;
+}
+.but input:hover{
+    background-color:skyblue;
+    cursor: pointer;
+}

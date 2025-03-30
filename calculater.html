@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+<style>
+    body{
+        background-color: burlywood;
+        animation: bg 20s infinite;
+    }
+
+    .calculator{
+        width: 360px;
+        display: grid;
+        place-items: center;
+        border: 2px solid black;
+    }
+    form{
+        margin: auto;
+        margin-top: 1%;
+        display: flex;
+        border-radius: 7px;
+        color:white;
+        background-color: rgb(102, 94, 94);
+        box-shadow:inset -1px 0px 11px 13px black;
+        animation: ak 30s infinite;
+    }
+    input{
+        outline: none;
+        border-radius: 7px;
+        padding: 16px;
+        color: black;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        cursor: pointer;   
+    }
+    
+    table{
+        font-size: 40px;
+        font-weight: bold;
+        text-decoration: underline;
+        font-family: chiller;
+        transition: 10s;
+    }
+    h1{
+        animation: ak47 5s infinite;
+    }
+    @keyframes ak{
+        50%{transform: rotate(0deg);}
+        100%{transform: rotate(360deg);opacity: 50%;}
+    }
+    @keyframes ak47{
+        50%{transition: 5s;opacity: 50%;}
+        100%{transition: 10s;opacity: 100%;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+    }
+    @keyframes bg{
+        25%{background-color: rgb(204, 247, 247);}
+        50%{background-color: rgb(141, 229, 229);}
+        75%{background-color: rgb(133, 212, 212);}
+        
+    }
+</style>
+
+<body>
+    <center>
+        <table>
+            <tr>
+                <th><h1>A.K Web Designer ( Html Calculator )</h1></th>
+            </tr>
+        </table>
+    </center>
+
+<form name="Calculator" class="calculator">
+<pre id="data">
+   <input type="text" name="Input" size="25">
+                 
+   <input type="button" name="one" value=" 1 " onclick="Calculator.Input.value += '1'">   <input type="button" name="four" value=" 4 " onclick="Calculator.Input.value += '4'">   <input type="button" name="seven" value=" 7 " onclick="Calculator.Input.value += '7'">   <input type="button" name="clear" value=" c " onclick="Calculator.Input.value = ''">
+   
+   <input type="button" name="two" value=" 2 " onclick="Calculator.Input.value += '2'">   <input type="button" name="five" value=" 5 " onclick="Calculator.Input.value += ' 5 '">   <input type="button" name="eight" value=" 8 " onclick="Calculator.Input.value += '8'">   <input type="button" name="equal" value=" = " onclick="Calculator.Input.value = eval(Calculator.Input.value)">
+   
+   <input type="button" name="three" value=" 3 " onclick="Calculator.Input.value += '3'">   <input type="button" name="six" value=" 6 " onclick="Calculator.Input.value += '6'">   <input type="button" name="nine" value=" 9 " onclick="Calculator.Input.value += '9'">   <input type="button" name="zero"  value=" 0 " onclick="Calculator.Input.value += '0'">
+   
+   <input type="button" name="add" value=" + " onclick="Calculator.Input.value += '+'">   <input type="button" name="minus" value=" - " onclick="Calculator.Input.value += '-'">    <input type="button" name="multi" value=" * " onclick="Calculator.Input.value += '*'">   <input type="button" name="devide"  value=" / " onclick="Calculator.Input.value += ' / '">  
+       
+</pre>
+    </form>
+</body>
+</html>

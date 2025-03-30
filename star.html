@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.box {
+    background: rgb(246, 156, 85);
+    width: 40px;
+    height: 40px;
+    margin:auto;
+    margin-top: 4%;
+    position: relative;
+    text-align: center;
+    -ms-transform: rotate(20deg);
+    transform: rotate(20eg);
+    animation: rot1  6s infinite;
+    padding: 20px;
+}
+.box::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 40px;
+ width: 40px;
+ background: rgb(243, 157, 91);
+ -ms-transform: rotate(135deg);
+ transform: rotate(135deg);
+ animation: rot  6s ease;
+ padding: 20px;
+}
+
+@keyframes rot{
+    to{transform: rotate(-360deg);}
+}
+@keyframes rot1{
+    to{transform: rotate(360deg);}
+}
+</style>
+<body>
+    <div class="box"></div>
+</body>
+</html>

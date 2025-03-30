@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        margin: auto;
+    }
+</style>
+<body>
+    <h1>Hello Everyone</h1>
+    <button id="dark" onclick="dark()">Dark Mode</button> <button id="light" onclick="light()">Light mode</button>
+
+    <script>
+        function dark(){
+            document.querySelector('html').style.colorScheme = 'dark';
+        }
+
+        function light(){
+            document.querySelector('html').style.colorScheme = 'light';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+<style>
+ul{
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.822);
+    color: white;
+    width: 80px;
+}
+li{
+    margin-bottom: 7px;
+    margin-left: 1px;
+    
+}
+ul.li{
+    text-align: center;
+}
+</style>
+<body>
+    <ul id="listt">
+        <li>copy</li>
+        <li>paste</li>
+        <li>print</li>
+        <li>share</li>
+    </ul>
+    <h1>random dataes</h1>
+    <pre>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Fugiat nulla voluptate neque, excepturi reprehenderit dicta alias repellendus et saepe
+        voluptatum explicabo dolorum laborum sit delectus culpa libero laboriosam temporibus similique.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Cupiditate reprehenderit obcaecati ut aspernatur consectetur facere, enim exercitationem 
+        officiis laudantium molestias iste nihil cum magnam quas iusto aperiam quidem rem doloremque.
+    </pre>
+    <script>
+        document.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+            listt.style.display= "block";
+            listt.style.left= e.pageX + "px";
+            listt.style.top= e.pageY + "px"; 
+        })
+        document.addEventListener('click', ()=>{
+            listt.style.display= "none";
+        })
+    </script>
+</body>
+</html>

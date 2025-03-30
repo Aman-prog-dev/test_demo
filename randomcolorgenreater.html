@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #card{
+        margin: auto;
+        margin-top: 13%;
+        width: 200px;
+        height: 200px;
+        box-shadow: 10px 0px 15px #bda4a4;
+        background-color: burlywood;
+        border-radius: 17px;
+    }
+    button{
+        background-color: aqua;
+        font-weight: bold;
+        color:rgb(10, 9, 9);
+        border-radius: 15px;
+        font-size: 40px;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div id="card"></div>
+    <br><br>
+    <center><button onclick="btn()" id="btn">Generate</button></center>
+</body>
+<script>
+    let btn=document.getElementById("btn");
+    btn.onclick=()=>{
+        const getcolor="#"+Math.floor(Math.random()*9687721).toString(16);
+        let code=getcolor;
+        let color=document.getElementById("card").style.backgroundColor=getcolor;
+    };
+</script>
+</html>

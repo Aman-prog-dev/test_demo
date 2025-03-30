@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.triangle-up {
+ width: 0;
+ height: 0;
+ margin: auto;
+ margin-top: 1%;
+ border-left: 100px dotted transparent;
+ border-right: 23px solid rgb(246, 156, 85);
+ border-bottom: 20px dotted transparent;
+ border-top: 200px dotted transparent;
+ animation: rot 5s infinite;
+}
+@keyframes rot{
+    to{transform: rotate(-360deg);border-color: red;}
+}
+</style>
+<body>
+    <div class="triangle-up"></div>
+    <div class="bod"></div>
+</body>
+</html>
