@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+//order the data to one by one
+(async() => {
+ data = [1, 2, 3, 4, 5];
+ for (let e of data) {
+ const i = await somePromiseFn(e);
+ console.log(i);
+ }
+ console.log('this will print last');
+})();
+//print data in 250 micro second(ms)
+function somePromiseFn(n) {
+return new Promise((res, rej) => {
+ setTimeout(() => res(n), 250);
+});}
+
+</script>
+
+</html>

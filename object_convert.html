@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    let columns = ["name", "post", "sales", "Location", "Age"];
+    let rows = ["mohan", "hr", 3573, "new delhi", "25"];
+    let result = rows.reduce(function(result, field, index) {
+        result[columns[index]] = field;
+        return result;
+    }, {})
+console.log(result);
+</script>
+</html>

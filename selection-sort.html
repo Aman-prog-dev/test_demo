@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection Sort Code</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f0f2f5;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        pre {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .output {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Selection Sort Implementation</h1>
+        
+        <h2>Code:</h2>
+        <pre>
+function selectionSort(arr) {
+    const n = arr.length;
+    
+    // One by one move boundary of unsorted subarray
+    for (let i = 0; i < n - 1; i++) {
+        // Find the minimum element in unsorted array
+        let minIndex = i;
+        for (let j = i + 1; j < n; j++) {
+            if (arr[j] < arr[minIndex]) {
+                minIndex = j;
+            }
+        }
+        
+        // Swap the found minimum element with the first element
+        [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]];
+    }
+    return arr;
+}
+
+// Example usage
+const array = [64, 34, 25, 12, 22, 11, 90];
+console.log("Original array:", array);
+const sortedArray = selectionSort(array);
+console.log("Sorted array:", sortedArray);</pre>
+
+        <h2>Output:</h2>
+        <div class="output" id="output"></div>
+    </div>
+
+    <script>
+        function selectionSort(arr) {
+            const n = arr.length;
+            
+            // One by one move boundary of unsorted subarray
+            for (let i = 0; i < n - 1; i++) {
+                // Find the minimum element in unsorted array
+                let minIndex = i;
+                for (let j = i + 1; j < n; j++) {
+                    if (arr[j] < arr[minIndex]) {
+                        minIndex = j;
+                    }
+                }
+                
+                // Swap the found minimum element with the first element
+                [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]];
+            }
+            return arr;
+        }
+
+        // Example usage
+        const array = [64, 34, 25, 12, 22, 11, 90];
+        const output = document.getElementById('output');
+        output.innerHTML = `Original array: [${array.join(', ')}]<br>`;
+        
+        const sortedArray = selectionSort([...array]);
+        output.innerHTML += `Sorted array: [${sortedArray.join(', ')}]`;
+    </script>
+</body>
+</html>

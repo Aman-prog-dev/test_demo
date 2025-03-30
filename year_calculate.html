@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <p id="para"></p>
+
+</body>
+
+<script>
+class car{
+  constructor(name,year){
+    this.name=name;
+    this.year=year;
+  }
+  age(){
+    let date=new Date();
+    return date.getFullYear()-this.year;
+  }
+}
+let mycar=new car('bmd',2002);
+document.getElementById('para').innerHTML='my car is:- '+mycar.age()+' year old.';
+</script>
+</html>

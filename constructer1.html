@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+// let DATA=Symbol('data');
+// class marksheet{
+//     constructor(name,clas,marks){
+//         this.name=name;
+//         this.clas=clas;
+//         this.marks=marks;
+//     }
+//     DATA(){
+//         name=this.name,
+//         clas=this.clas,
+//         marks=this.marks
+//     };
+// }
+// let obj1=new marksheet('mohit','xi',300);
+// let obj2=new marksheet('ram','xii',500)
+// console.log(obj1,obj2);
+            or
+            function marksheet(name,math,science,hindi,english){
+  this.name=name;
+  this.math=math;
+  this.science=science;
+  this.hindi=hindi;
+  this.english=english;
+}
+let object1= new marksheet('mohit',65,87,98,65);
+document.getElementById('pa').innerHTML=JSON.stringify(object1);
+</script>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="para"></p>
+</body>
+<script>
+  function square(num){
+    document.getElementById('para').innerHTML=num+" of square:- "+num**2;
+  }
+  let data=[9];
+  data.forEach(square);
+</script>
+</html>

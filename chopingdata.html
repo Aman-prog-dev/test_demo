@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+{
+
+    
+/* consol.dirxml
+    let myObject = {
+        ram:{ rama:"jai shree ram"}
+    };
+    console.dirxml(myObject);
+*/
+    string =  function(str, size){
+      if (str == null) return [];
+      str = String(str);
+      size = ~~size;
+    return size > 0 ? str.match(new RegExp('.{1,' + size + '}', 'g')) : [str];
+    }
+    console.log(string('amankumar',2));
+
+
+}
+</script>
+</html>

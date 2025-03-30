@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+{
+   /*create the all banking details */
+    function Checking(amount) {
+    this.deposit = deposit;
+    this.balance = amount;
+    this.toString = toString;
+    this.withdraw = withdraw;
+    }
+
+/*balance deposite function */
+    function deposit(amount) {
+    this.balance += amount;
+    }
+
+/* balance widthraw function */
+    function withdraw(amount) {
+    if (amount <= this.balance) {
+    this.balance -= amount;
+    }
+    if (amount > this.balance) {
+        console.log("Insufficient funds");
+    }   }
+
+    function toString() {
+        return "Balance: " + this.balance;
+        }
+    var account = new Checking(500);
+    console.log(account.toString()); // Balance: 1500
+    account.deposit(1000);
+    console.log(account.toString()); // Balance: 750
+    account.withdraw(750);
+    console.log(account.toString()); // Balance: 750
+    account.withdraw(800); // displays "Insufficient funds"
+
+}
+</script>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+  <p id="pa"></p>
+
+</body>
+
+<script>
+// let employ={
+//   name:'mohan',
+//   post: 'hr',
+//   salary: 25000,
+//     employ1:{
+//       name: 'sumit',
+//       post: 'manager',
+//       salary: 40000
+//     }
+// }
+// document.getElementById('pa').innerHTML=employ.salary;
+
+let data=''
+let fruits={apple:333,mango:654,charry:876,kiwi:987};
+for(let[name,qty] of Object.entries(fruits)){
+data += name + ':- ' + qty + '<br>';
+}
+document.getElementById('pa').innerHTML=data;
+document.getElementById('pas').innerHTML=JSON.stringify(data);
+</script>
+
+</html>

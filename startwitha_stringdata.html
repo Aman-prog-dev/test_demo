@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+function startsWithLetterA(str) {
+ if(str && str[0].toLowerCase() == 'a') {
+         return true
+    }
+    return false;
+}
+    let str= "Since Boolean is a native javascript function/constructor that takes oneoptional parameter and the filter method also takes a function and passes it the current arrayitem as a parameter, you could read it like the following";
+    let strArray = str.split(" ");
+    let wordsStartsWithA = strArray.filter(startsWithLetterA);
+    console.log(wordsStartsWithA)
+</script>
+</html>

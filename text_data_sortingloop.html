@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+{
+    
+    let a="welcome back"
+    let b=[]
+    b=a.split('')
+    for (let i = 1; i < b.length; i++)
+        for (let j = 0; j < i; j++)
+            if (b[i] < b[j]) {
+                let x = b[i];
+                b[i] = b[j];
+                b[j] = x;
+            }
+    console.log(b);
+}
+</script>
+</html>

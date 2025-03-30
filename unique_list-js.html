@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+<p id="para"></p>
+</body>
+
+<script>
+// let fruits=['apple','cherry','coconut','banana'];
+// let len =fruits.length;
+// let txt="<ol>";
+// for(let i=0 ; i<len; i++){
+//   txt+="<li>"+fruits[i]+"</li>";
+//   }
+//   txt += "<ol>";
+//   document.getElementById("para").innerHTML=txt;
+let head= 'tree';
+let trees=['apple','mango','papaya','orange','pineapple']
+let out=`<font>${head}</font><ul>`;
+for(let x of trees){
+  out +=`<li>${x}</li>`;
+}
+out += '</ol>';
+document.getElementById('para').innerHTML= out;
+</script>
+</html>

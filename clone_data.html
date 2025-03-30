@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    // arrayToClone = [1, 2, 3, 4, 5];
+    // clone1 = Array.from(arrayToClone);
+    // clone2 = Array.of(...arrayToClone);
+    // clone3 = [...arrayToClone]
+    // console.log(clone3)
+    
+
+function calculateAsyncSum(numbers) {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      const sum = numbers.reduce((acc, num) => acc + num, 0);
+      resolve(sum);
+    }, 1000);
+  });
+}
+
+async function getResult() {
+  const data = [ 5,5];
+  const result = await calculateAsyncSum(data);
+  console.log(result);
+}
+
+getResult();
+
+</script>
+</html>

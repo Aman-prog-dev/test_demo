@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+
+    function wait(sec){
+        return new Promise(resolve=>setTimeout(resolve,sec));
+    }
+    wait(3000).then(() => {
+ console.log('3 seconds have passed...');});
+ wait(6000).then(() => {
+ console.log('6 seconds have passed...');});
+ wait(9000).then(() => {
+ console.log('9 seconds have passed...');});
+</script>
+</html>

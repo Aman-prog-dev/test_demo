@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+        /*
+function days_between(date1, date2) {
+
+    // The number of milliseconds in one day
+    let ONE_DAY = 1000 * 60 * 60 * 24;
+    // Calculate the difference in milliseconds
+    let differenceMs = Math.abs(date1 - date2);
+    // Convert back to days and return
+    return Math.round(differenceMs / ONE_DAY);
+
+}*/
+
+let oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds(8640000)
+let firstDate = new Date(2022, 1, 12);
+let secondDate = new Date(2023, 1, 12);
+let diffDays = Math.round(Math.abs((firstDate - secondDate) / oneDay));
+console.log(diffDays)
+</script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    data="mom"
+    b=data.split("")
+    b.reverse()
+    c=b.join("")
+    if(data===c){
+        console.log("same same!")
+    }
+    else{
+        console.log("try other datas!")
+    }
+
+
+    let reverseString = (str) => str.split("").reverse().join("");
+    console.log(reverseString("hello"))
+</script>
+</html>
