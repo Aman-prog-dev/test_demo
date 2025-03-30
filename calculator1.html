@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    /* input:in-range {
+ border: 1px solid blue;
+ */ 
+body{
+    /* background-color: floralwhite; */
+    background-color: rgb(245,255,250);
+    animation: bg 5s infinite;
+}
+table{  
+    border-collapse: separate;
+}
+form{
+    width: 230px;
+    height: 180px;
+    border: 1px solid black;
+    padding: 20px 0%;
+    border-radius: 8px;
+    background-color: rgb(244, 233, 218);
+    box-shadow: inset 1px 9px 14px black;
+    opacity: 80%;
+}
+input[type="button"]{
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+}
+input{
+    outline: none;
+}
+@keyframes bg{
+    25%{background-color: rgb(230, 226, 222);}
+    50%{background-color: rgba(253, 235, 213, 0.852);}
+    75%{background-color: rgb(229, 199, 161);}
+    100%{background-color: rgba(220, 174, 112, 0.586);}
+}
+</style>
+
+<body>
+    <!-- <input type="number" min="10" max="20" value="15"> -->
+<center>Calculator By Aman Kumar...
+    <form name="Calculator">
+        
+    <table>
+        
+        <tr>
+            <th colspan="3"><input type="text" name="Input"></th>
+        </tr>
+        <tr>
+            <th><input type="button" value="    1    " id="value1" name="value1" onclick="Calculator.Input.value+='1'"></th>
+            <th><input type="button" value="    2    " id="value2" name="value2" onclick="Calculator.Input.value+='2'"></th>
+            <th><input type="button" value="    3    " id="value3" name="value3" onclick="Calculator.Input.value+='3'"></th>
+        </tr>
+        <tr>
+            <th><input type="button" value="    4    " id="value4" name="value4" onclick="Calculator.Input.value+='4'"></th>
+            <th><input type="button" value="    5    " id="value5" name="value5" onclick="Calculator.Input.value+='5'"></th>
+            <th><input type="button" value="    6    " id="value6" name="value6" onclick="Calculator.Input.value+='6'"></th>
+        </tr>
+        <tr>
+            <th><input type="button" value="    7    " id="value7" name="value7" onclick="Calculator.Input.value+='7'"></th>
+            <th><input type="button" value="    8    " id="value8" name="value8" onclick="Calculator.Input.value+='8'"></th>
+            <th><input type="button" value="    9    " id="value9" name="value9" onclick="Calculator.Input.value+='9'"></th>
+        </tr>
+        <tr>
+            <th><input type="button" value="    0    " id="value0" name="value0" onclick="Calculator.Input.value+='0'"></th>
+            <th><input type="button" value="    +    " id="plus" name="plus" onclick="Calculator.Input.value+='+'"></th>
+            <th><input type="button" value="    -     " id="minus" name="minus" onclick="Calculator.Input.value+='-'"></th>
+        </tr>
+        <tr>
+            <th><input type="button" value="    *     " id="mul" name="mul" onclick="Calculator.Input.value+='*'"></th>
+            <th><input type="button" value="    /     " id="div" name="div" onclick="Calculator.Input.value+='/'"></th>
+            <th><input type="button" value="    c    " id="clear" name="clear" onclick="Calculator.Input.value=''"></th>
+        </tr>
+        <tr>
+            <th><input type="button" value="    %    " id="percentage" name="percentage" onclick="Calculator.Input.value+='%'"></th>
+            <th><input type="button" value="    ^    " id="underscore" name="underscore" onclick="Calculator.Input.value+='^'"></th>
+            <th><input type="button" value="    =    " id="equal" name="equal" onclick="Calculator.Input.value=eval(Calculator.Input.value)"></th>
+        </tr>
+    </table>
+    </form>
+</center>
+</body>
+</html>
