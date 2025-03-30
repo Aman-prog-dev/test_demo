@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>cs azad</title>
+        <link rel="stylesheet" href="input.css">
+        <link rel="stylesheet" href="output.css">
+        <link rel="stylesheet" href="input.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="root">
+            <div class="min-h-screen bg-white">
+                <div class="bg-rose-600 text-white py-2 text-center text-sm">Ak Coder | Webdesing & Web Devlopment | Coding....
+                    </div>
+                <header class="sticky top-0 z-50 bg-white shadow-sm">
+                    <div class="max-w-7xl mx-auto">
+                        <div class="flex items-center justify-between px-4 py-4">
+                            <div class="flex items-center space-x-4"><button class="lg:hidden"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-menu h-6 w-6">
+                                        <line x1="4" x2="20" y1="12" y2="12"></line>
+                                        <line x1="4" x2="20" y1="6" y2="6"></line>
+                                        <line x1="4" x2="20" y1="18" y2="18"></line>
+                                    </svg></button><a href="#" class="text-2xl font-bold text-rose-600">AZADITI</a>
+                            </div>
+                            <div class="hidden lg:block flex-1 max-w-xl mx-8">
+                                <div class="relative"><input type="text" placeholder="Search for products..."
+                                        class="w-full px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-rose-500"
+                                        value=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-search absolute right-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <path d="m21 21-4.3-4.3"></path>
+                                    </svg></div>
+                            </div>
+                            <div class="flex items-center space-x-6"><a href="#"
+                                    class="hidden lg:flex items-center text-gray-700 hover:text-rose-600"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-heart h-6 w-6">
+                                        <path
+                                            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                                        </path>
+                                    </svg></a><a href="#"
+                                    class="hidden lg:flex items-center text-gray-700 hover:text-rose-600"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-user h-6 w-6">
+                                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg></a><a href="#"
+                                    class="flex items-center text-gray-700 hover:text-rose-600"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-shopping-bag h-6 w-6">
+                                        <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                        <path d="M3 6h18"></path>
+                                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                    </svg><span class="ml-1 text-sm font-medium">0</span></a></div>
+                        </div>
+                        <nav class="hidden lg:flex items-center justify-center space-x-8 py-4 border-t"><a href="#"
+                                class="text-gray-600 hover:text-rose-600 font-medium">New Arrivals</a><a href="#"
+                                class="text-gray-600 hover:text-rose-600 font-medium">Ethnic Wear</a><a href="#"
+                                class="text-gray-600 hover:text-rose-600 font-medium">Western Wear</a><a href="#"
+                                class="text-gray-600 hover:text-rose-600 font-medium">Fusion Wear</a><a href="#"
+                                class="text-gray-600 hover:text-rose-600 font-medium">Accessories</a><a href="#"
+                                class="text-gray-600 hover:text-rose-600 font-medium">Wedding Collection</a></nav>
+                    </div>
+                </header>
+                <section class="relative"><img
+                        src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&amp;fit=crop&amp;w=2000&amp;q=80"
+                        alt="Fashion Banner" class="w-full h-[600px] object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <h1 class="text-5xl font-bold mb-6">New Season Arrivals</h1>
+                            <p class="text-xl mb-8">Discover the latest trends in ethnic and western wear</p><a href="#"
+                                class="bg-rose-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-rose-700 transition-colors">Shop
+                                Now</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="py-16">
+                    <div class="max-w-7xl mx-auto px-4">
+                        <h2 class="text-3xl font-bold text-center mb-12">Shop By Category</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div class="relative group overflow-hidden rounded-lg"><img
+                                    src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                                    alt="Ethnic Wear"
+                                    class="w-full h-[400px] object-cover transition-transform duration-300 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                                    <div class="text-center text-white">
+                                        <h3 class="text-2xl font-bold mb-2">Ethnic Wear</h3><a href="#"
+                                            class="text-sm font-medium hover:underline">Shop Collection</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative group overflow-hidden rounded-lg"><img
+                                    src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                                    alt="Western Wear"
+                                    class="w-full h-[400px] object-cover transition-transform duration-300 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                                    <div class="text-center text-white">
+                                        <h3 class="text-2xl font-bold mb-2">Western Wear</h3><a href="#"
+                                            class="text-sm font-medium hover:underline">Shop Collection</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative group overflow-hidden rounded-lg"><img
+                                    src="https://images.unsplash.com/photo-1610030469668-8e9f638121dd?auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                                    alt="Accessories"
+                                    class="w-full h-[400px] object-cover transition-transform duration-300 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                                    <div class="text-center text-white">
+                                        <h3 class="text-2xl font-bold mb-2">Accessories</h3><a href="#"
+                                            class="text-sm font-medium hover:underline">Shop Collection</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="bg-gray-50 py-16">
+                    <div class="max-w-7xl mx-auto px-4">
+                        <h2 class="text-3xl font-bold text-center mb-12">Featured Products</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                            <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+                                <div class="relative"><img
+                                        src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&amp;fit=crop&amp;w=500&amp;q=80"
+                                        alt="Floral Print Maxi Dress"
+                                        class="w-full h-[300px] object-cover transition-transform duration-300 group-hover:scale-105"><button
+                                        class="absolute top-4 right-4 text-gray-600 hover:text-rose-600"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-heart h-6 w-6">
+                                            <path
+                                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                                            </path>
+                                        </svg></button></div>
+                                <div class="p-4">
+                                    <h3 class="font-medium mb-2">Floral Print Maxi Dress</h3>
+                                    <div class="flex items-center justify-between"><span
+                                            class="text-lg font-bold text-rose-600">₹2,499</span>
+                                        <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="lucide lucide-star h-4 w-4 text-yellow-400 fill-current">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg><span class="ml-1 text-sm text-gray-600">4.5</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+                                <div class="relative"><img
+                                        src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&amp;fit=crop&amp;w=500&amp;q=80"
+                                        alt="Embroidered Kurti Set"
+                                        class="w-full h-[300px] object-cover transition-transform duration-300 group-hover:scale-105"><button
+                                        class="absolute top-4 right-4 text-gray-600 hover:text-rose-600"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-heart h-6 w-6">
+                                            <path
+                                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                                            </path>
+                                        </svg></button></div>
+                                <div class="p-4">
+                                    <h3 class="font-medium mb-2">Embroidered Kurti Set</h3>
+                                    <div class="flex items-center justify-between"><span
+                                            class="text-lg font-bold text-rose-600">₹3,299</span>
+                                        <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="lucide lucide-star h-4 w-4 text-yellow-400 fill-current">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg><span class="ml-1 text-sm text-gray-600">4.8</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+                                <div class="relative"><img
+                                        src="https://images.unsplash.com/photo-1610030469668-8e9f638121dd?auto=format&amp;fit=crop&amp;w=500&amp;q=80"
+                                        alt="Traditional Silk Saree"
+                                        class="w-full h-[300px] object-cover transition-transform duration-300 group-hover:scale-105"><button
+                                        class="absolute top-4 right-4 text-gray-600 hover:text-rose-600"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-heart h-6 w-6">
+                                            <path
+                                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                                            </path>
+                                        </svg></button></div>
+                                <div class="p-4">
+                                    <h3 class="font-medium mb-2">Traditional Silk Saree</h3>
+                                    <div class="flex items-center justify-between"><span
+                                            class="text-lg font-bold text-rose-600">₹5,999</span>
+                                        <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="lucide lucide-star h-4 w-4 text-yellow-400 fill-current">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg><span class="ml-1 text-sm text-gray-600">4.7</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+                                <div class="relative"><img
+                                        src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&amp;fit=crop&amp;w=500&amp;q=80"
+                                        alt="Designer Anarkali Suit"
+                                        class="w-full h-[300px] object-cover transition-transform duration-300 group-hover:scale-105"><button
+                                        class="absolute top-4 right-4 text-gray-600 hover:text-rose-600"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-heart h-6 w-6">
+                                            <path
+                                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                                            </path>
+                                        </svg></button></div>
+                                <div class="p-4">
+                                    <h3 class="font-medium mb-2">Designer Anarkali Suit</h3>
+                                    <div class="flex items-center justify-between"><span
+                                            class="text-lg font-bold text-rose-600">₹4,499</span>
+                                        <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="lucide lucide-star h-4 w-4 text-yellow-400 fill-current">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg><span class="ml-1 text-sm text-gray-600">4.6</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="py-16">
+                    <div class="max-w-7xl mx-auto px-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                            <div class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-truck h-12 w-12 text-rose-600 mx-auto mb-4">
+                                    <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"></path>
+                                    <path d="M15 18H9"></path>
+                                    <path
+                                        d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14">
+                                    </path>
+                                    <circle cx="17" cy="18" r="2"></circle>
+                                    <circle cx="7" cy="18" r="2"></circle>
+                                </svg>
+                                <h3 class="font-semibold mb-2">Free Shipping</h3>
+                                <p class="text-gray-600 text-sm">On orders above ₹999</p>
+                            </div>
+                            <div class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-refresh-cw h-12 w-12 text-rose-600 mx-auto mb-4">
+                                    <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
+                                    <path d="M21 3v5h-5"></path>
+                                    <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path>
+                                    <path d="M8 16H3v5"></path>
+                                </svg>
+                                <h3 class="font-semibold mb-2">Easy Returns</h3>
+                                <p class="text-gray-600 text-sm">15-day return policy</p>
+                            </div>
+                            <div class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-shield h-12 w-12 text-rose-600 mx-auto mb-4">
+                                    <path
+                                        d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+                                    </path>
+                                </svg>
+                                <h3 class="font-semibold mb-2">Secure Payments</h3>
+                                <p class="text-gray-600 text-sm">100% secure checkout</p>
+                            </div>
+                            <div class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-star h-12 w-12 text-rose-600 mx-auto mb-4">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <h3 class="font-semibold mb-2">Premium Quality</h3>
+                                <p class="text-gray-600 text-sm">Handpicked products</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="bg-rose-50 py-16">
+                    <div class="max-w-3xl mx-auto px-4 text-center">
+                        <h2 class="text-3xl font-bold mb-4">Subscribe to Our Newsletter</h2>
+                        <p class="text-gray-600 mb-8">Stay updated with the latest trends and exclusive offers</p>
+                        <div class="flex max-w-md mx-auto"><input type="email" placeholder="Enter your email"
+                                class="flex-1 px-4 py-3 rounded-l-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-rose-500"><button
+                                class="bg-rose-600 text-white px-6 py-3 rounded-r-lg hover:bg-rose-700 transition-colors">Subscribe</button>
+                        </div>
+                    </div>
+                </section>
+                <footer class="bg-gray-900 text-white py-16">
+                    <div class="max-w-7xl mx-auto px-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-6">AZADITI</h3>
+                                <p class="text-gray-400 mb-6">Your one-stop destination for ethnic and western wear
+                                    fashion.</p>
+                                <div class="flex space-x-4"><a href="#" class="text-gray-400 hover:text-white"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-facebook h-6 w-6">
+                                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z">
+                                            </path>
+                                        </svg></a><a href="#" class="text-gray-400 hover:text-white"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-instagram h-6 w-6">
+                                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                                        </svg></a><a href="#" class="text-gray-400 hover:text-white"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-twitter h-6 w-6">
+                                            <path
+                                                d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                                            </path>
+                                        </svg></a><a href="#" class="text-gray-400 hover:text-white"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-youtube h-6 w-6">
+                                            <path
+                                                d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17">
+                                            </path>
+                                            <path d="m10 15 5-3-5-3z"></path>
+                                        </svg></a></div>
+                            </div>
+                            <div>
+                                <h3 class="font-bold mb-6">Quick Links</h3>
+                                <ul class="space-y-4">
+                                    <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                                    <li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                                    <li><a href="#" class="text-gray-400 hover:text-white">Terms &amp; Conditions</a>
+                                    </li>
+                                    <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="font-bold mb-6">Customer Service</h3>
+                                <ul class="space-y-4">
+                                    <li><a href="#" class="text-gray-400 hover:text-white">Track Order</a></li>
+                                    <li><a href="#" class="text-gray-400 hover:text-white">Shipping Policy</a></li>
+                                    <li><a href="#" class="text-gray-400 hover:text-white">Returns &amp; Exchange</a>
+                                    </li>
+                                    <li><a href="#" class="text-gray-400 hover:text-white">FAQs</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="font-bold mb-6">Contact Us</h3>
+                                <ul class="space-y-4 text-gray-400">
+                                    <li>1234 Fashion Street</li>
+                                    <li>New Delhi Palam Village</li>
+                                    <li>Phone: +91 9234567890</li>
+                                    <li>Email: supportAman@azaditi.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                            <p>© By Ak Coder.. 2025 Azaditi. All rights reserved.</p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+
+</html>

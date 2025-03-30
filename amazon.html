@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Amazon</title>
+        <link rel="stylesheet" href="input.css">
+        <link rel="stylesheet" href="output.css">
+        <link rel="stylesheet" href="input.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="root">
+            <div class="min-h-screen bg-gray-100">
+                <header class="bg-[#131921] text-white">
+                    <div class="max-w-7xl mx-auto px-4">
+                        <div class="flex items-center justify-between py-2">
+                            <div class="flex items-center space-x-4"><button class="lg:hidden"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-menu h-6 w-6">
+                                        <line x1="4" x2="20" y1="12" y2="12"></line>
+                                        <line x1="4" x2="20" y1="6" y2="6"></line>
+                                        <line x1="4" x2="20" y1="18" y2="18"></line>
+                                    </svg></button><a href="#" class="text-2xl font-bold">amazon.in</a></div>
+                            <div class="hidden md:flex items-center space-x-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-map-pin h-5 w-5">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <div>
+                                    <p class="text-xs text-gray-300">Deliver to</p>
+                                    <p class="text-sm font-bold">Select your address</p>
+                                </div>
+                            </div>
+                            <div class="flex-1 max-w-2xl mx-4">
+                                <div class="relative"><input type="text" placeholder="Search Amazon.in"
+                                        class="w-full px-4 py-2 rounded-lg text-gray-900 focus:outline-none"
+                                        value=""><button
+                                        class="absolute right-0 top-0 h-full px-4 bg-[#febd69] rounded-r-lg hover:bg-[#f3a847]"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-search h-5 w-5 text-gray-700">
+                                            <circle cx="11" cy="11" r="8"></circle>
+                                            <path d="m21 21-4.3-4.3"></path>
+                                        </svg></button></div>
+                            </div>
+                            <div class="hidden md:flex items-center space-x-6">
+                                <div class="cursor-pointer">
+                                    <p class="text-xs">Hello, Sign in</p>
+                                    <p class="text-sm font-bold">Account &amp; Lists</p>
+                                </div>
+                                <div class="cursor-pointer">
+                                    <p class="text-xs">Returns</p>
+                                    <p class="text-sm font-bold">&amp; Orders</p>
+                                </div>
+                                <div class="flex items-center cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-shopping-cart h-8 w-8">
+                                        <circle cx="8" cy="21" r="1"></circle>
+                                        <circle cx="19" cy="21" r="1"></circle>
+                                        <path
+                                            d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12">
+                                        </path>
+                                    </svg><span class="font-bold">Cart</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="bg-[#232f3e] py-2">
+                        <div class="max-w-7xl mx-auto px-4">
+                            <div class="flex items-center space-x-4"><button
+                                    class="flex items-center space-x-1 hover:text-yellow-400"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-menu h-6 w-6">
+                                        <line x1="4" x2="20" y1="12" y2="12"></line>
+                                        <line x1="4" x2="20" y1="6" y2="6"></line>
+                                        <line x1="4" x2="20" y1="18" y2="18"></line>
+                                    </svg><span>All</span></button><a href="#" class="hover:text-yellow-400">Best
+                                    Sellers</a><a href="#" class="hover:text-yellow-400">Mobiles</a><a href="#"
+                                    class="hover:text-yellow-400">Today's Deals</a><a href="#"
+                                    class="hover:text-yellow-400">Electronics</a><a href="#"
+                                    class="hidden md:block hover:text-yellow-400">Prime</a><a href="#"
+                                    class="hidden md:block hover:text-yellow-400">New Releases</a><a href="#"
+                                    class="hidden md:block hover:text-yellow-400">Customer Service</a></div>
+                        </div>
+                    </nav>
+                </header>
+                <main>
+                    <div class="relative"><img
+                            src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&amp;fit=crop&amp;w=2000&amp;h=600"
+                            alt="Hero Banner" class="w-full h-[300px] md:h-[400px] object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+                    </div>
+                    <div class="max-w-7xl mx-auto px-4 -mt-16 relative z-10">
+                        <div class="bg-white rounded-lg shadow-lg p-6">
+                            <h2 class="text-2xl font-bold mb-4">Today's Deals</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                                <div class="bg-white rounded-lg border hover:shadow-lg transition-shadow"><img
+                                        src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&amp;fit=crop&amp;w=300"
+                                        alt="OnePlus Nord CE 3 Lite 5G" class="w-full h-48 object-cover rounded-t-lg">
+                                    <div class="p-4">
+                                        <h3 class="font-medium text-lg mb-2">OnePlus Nord CE 3 Lite 5G</h3>
+                                        <div class="flex items-center space-x-2"><span
+                                                class="text-2xl font-bold">₹19,999</span><span
+                                                class="text-sm text-gray-500 line-through">₹25,999</span><span
+                                                class="text-sm text-green-600">23% off</span></div><button
+                                            class="mt-4 w-full bg-[#ffd814] hover:bg-[#f7ca00] py-2 rounded-lg font-medium">Add
+                                            to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded-lg border hover:shadow-lg transition-shadow"><img
+                                        src="https://images.unsplash.com/photo-1606220838315-056192d5e927?auto=format&amp;fit=crop&amp;w=300"
+                                        alt="boAt Airdopes 141 TWS Earbuds"
+                                        class="w-full h-48 object-cover rounded-t-lg">
+                                    <div class="p-4">
+                                        <h3 class="font-medium text-lg mb-2">boAt Airdopes 141 TWS Earbuds</h3>
+                                        <div class="flex items-center space-x-2"><span
+                                                class="text-2xl font-bold">₹1,299</span><span
+                                                class="text-sm text-gray-500 line-through">₹4,499</span><span
+                                                class="text-sm text-green-600">71% off</span></div><button
+                                            class="mt-4 w-full bg-[#ffd814] hover:bg-[#f7ca00] py-2 rounded-lg font-medium">Add
+                                            to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded-lg border hover:shadow-lg transition-shadow"><img
+                                        src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&amp;fit=crop&amp;w=300"
+                                        alt="Samsung Galaxy M14 5G" class="w-full h-48 object-cover rounded-t-lg">
+                                    <div class="p-4">
+                                        <h3 class="font-medium text-lg mb-2">Samsung Galaxy M14 5G</h3>
+                                        <div class="flex items-center space-x-2"><span
+                                                class="text-2xl font-bold">₹14,990</span><span
+                                                class="text-sm text-gray-500 line-through">₹18,990</span><span
+                                                class="text-sm text-green-600">21% off</span></div><button
+                                            class="mt-4 w-full bg-[#ffd814] hover:bg-[#f7ca00] py-2 rounded-lg font-medium">Add
+                                            to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded-lg border hover:shadow-lg transition-shadow"><img
+                                        src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&amp;fit=crop&amp;w=300"
+                                        alt="HP Laptop 15s" class="w-full h-48 object-cover rounded-t-lg">
+                                    <div class="p-4">
+                                        <h3 class="font-medium text-lg mb-2">HP Laptop 15s</h3>
+                                        <div class="flex items-center space-x-2"><span
+                                                class="text-2xl font-bold">₹37,990</span><span
+                                                class="text-sm text-gray-500 line-through">₹49,999</span><span
+                                                class="text-sm text-green-600">24% off</span></div><button
+                                            class="mt-4 w-full bg-[#ffd814] hover:bg-[#f7ca00] py-2 rounded-lg font-medium">Add
+                                            to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="max-w-7xl mx-auto px-4 py-8">
+                        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                            <div class="bg-white p-4 rounded-lg">
+                                <h2 class="text-xl font-bold mb-4">Up to 70% off | Electronics clearance store</h2>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div><img
+                                            src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&amp;fit=crop&amp;w=300"
+                                            alt="Electronics" class="w-full h-24 object-cover rounded">
+                                        <p class="text-sm mt-2">Smartwatches</p>
+                                    </div>
+                                    <div><img
+                                            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&amp;fit=crop&amp;w=300"
+                                            alt="Electronics" class="w-full h-24 object-cover rounded">
+                                        <p class="text-sm mt-2">Headphones</p>
+                                    </div>
+                                </div><a href="#" class="text-sm text-blue-600 mt-4 block">See all offers</a>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg">
+                                <h2 class="text-xl font-bold mb-4">Starting ₹199 | Home &amp; kitchen</h2><img
+                                    src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&amp;fit=crop&amp;w=500"
+                                    alt="Home &amp; Kitchen" class="w-full h-48 object-cover rounded"><a href="#"
+                                    class="text-sm text-blue-600 mt-4 block">Shop now</a>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg">
+                                <h2 class="text-xl font-bold mb-4">Up to 60% off | Styles for men</h2><img
+                                    src="https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?auto=format&amp;fit=crop&amp;w=500"
+                                    alt="Men's Fashion" class="w-full h-48 object-cover rounded"><a href="#"
+                                    class="text-sm text-blue-600 mt-4 block">End of season sale</a>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg">
+                                <h2 class="text-xl font-bold mb-4">Sign in for your best experience</h2><button
+                                    class="w-full bg-[#ffd814] hover:bg-[#f7ca00] py-2 rounded-lg font-medium mb-4">Sign
+                                    in securely</button><img
+                                    src="https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&amp;fit=crop&amp;w=500"
+                                    alt="Sign In" class="w-full h-32 object-cover rounded">
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer class="bg-[#232f3e] text-white mt-8">
+                    <div class="max-w-7xl mx-auto px-4 py-8">
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                            <div>
+                                <h3 class="font-bold mb-4">Get to Know Us</h3>
+                                <ul class="space-y-2">
+                                    <li><a href="#" class="text-gray-300 hover:text-white">About Us</a></li>
+                                    <li><a href="#" class="text-gray-300 hover:text-white">Careers</a></li>
+                                    <li><a href="#" class="text-gray-300 hover:text-white">Press Releases</a></li>
+                                    <li><a href="#" class="text-gray-300 hover:text-white">Amazon Science</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="font-bold mb-4">Connect with Us</h3>
+                                <ul class="space-y-2">
+                                    <li><a href="#" class="text-gray-300 hover:text-white">Facebook</a></li>
+                                    <li><a href="#" class="text-gray-300 hover:text-white">Twitter</a></li>
+                                    <li><a href="#" class="text-gray-300 hover:text-white">Instagram</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="font-bold mb-4">Make Money with Us</h3>
+                                <ul class="space-y-2">
+                                    <li><a href="#" class="text-gray-300 hover:text-white">Sell on Amazon</a></li>
+                                    <li><a href="#" class="text-gray-300 hover:text-white">Sell under Amazon
+                                            Accelerator</a></li>
+                                    <li><a href="#" class="text-gray-300 hover:text-white">Protect and Build Your
+                                            Brand</a></li>
+                                    <li><a href="#" class="text-gray-300 hover:text-white">Amazon Global Selling</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="font-bold mb-4">Let Us Help You</h3>
+                                <ul class="space-y-2">
+                                    <li><a href="#" class="text-gray-300 hover:text-white">COVID-19 and Amazon</a></li>
+                                    <li><a href="#" class="text-gray-300 hover:text-white">Your Account</a></li>
+                                    <li><a href="#" class="text-gray-300 hover:text-white">Returns Centre</a></li>
+                                    <li><a href="#" class="text-gray-300 hover:text-white">100% Purchase Protection</a>
+                                    </li>
+                                    <li><a href="#" class="text-gray-300 hover:text-white">Amazon App Download</a></li>
+                                    <li><a href="#" class="text-gray-300 hover:text-white">Help</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="border-t border-gray-700 mt-8 pt-8 text-center"><img
+                                src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
+                                alt="Amazon Logo" class="h-8 mx-auto mb-4">
+                            <p class="text-sm text-gray-400">© By Ak Coder.. 2024-2025, Amazon.com, Inc. or its
+                                affiliates</p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+
+</html>
